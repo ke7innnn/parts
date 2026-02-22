@@ -27,12 +27,7 @@ export default function TermsPage() {
 
       {/* Content */}
       <section className="py-16 sm:py-20 bg-white relative overflow-hidden z-0">
-        <ParallaxBackground
-          src="/parallax-parts-light.png"
-          alt="Clean Auto Parts Background"
-          speed={0.15}
-          opacity={50}
-        />
+
 
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-border shadow-sm">
           <div className="prose prose-slate max-w-none space-y-8">

@@ -8,13 +8,7 @@ export default function Home() {
     <>
       {/* ========== HERO SECTION ========== */}
       <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-slate-50">
-        {/* Subtle, huge transparent 3D parallax car in background */}
-        <ParallaxBackground
-          src="/parallax-car-light.png"
-          alt="Clean Car Background"
-          speed={0.12}
-          opacity={50}
-        />
+
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32 w-full pt-28 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -140,13 +134,7 @@ export default function Home() {
 
       {/* ========== HOW IT WORKS SECTION ========== */}
       <section className="py-20 sm:py-28 bg-surface border-t border-border relative overflow-hidden z-0">
-        {/* Another subtle parallax background, flipped horizontally for variation */}
-        <ParallaxBackground
-          src="/parallax-parts-light.png"
-          alt="Clean Auto Parts Background"
-          speed={0.18}
-          opacity={50}
-        />
+
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16">

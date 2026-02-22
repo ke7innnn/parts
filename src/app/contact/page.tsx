@@ -18,12 +18,7 @@ export default function ContactPage() {
 
       {/* Contact Content */}
       <section className="py-16 sm:py-24 bg-white relative overflow-hidden z-0">
-        <ParallaxBackground
-          src="/parallax-car-light.png"
-          alt="Abstract Sports Car"
-          speed={0.18}
-          opacity={50}
-        />
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Contact Info */}

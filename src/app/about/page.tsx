@@ -18,12 +18,7 @@ export default function AboutPage() {
 
       {/* Mission + Image */}
       <section className="py-16 sm:py-24 bg-white relative overflow-hidden z-0">
-        <ParallaxBackground
-          src="/parallax-parts-light.png"
-          alt="Abstract Automotive Parts"
-          speed={0.12}
-          opacity={50}
-        />
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-md">
