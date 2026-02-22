@@ -1,71 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --primary: #3b82f6;
-  /* bright blue */
-  --primary-light: #60a5fa;
-  --primary-dark: #1d4ed8;
-  --accent: #ef4444;
-  /* sharp red */
-  --accent-hover: #dc2626;
-  --background: #09090b;
-  /* very dark gray/black */
-  --surface: #18181b;
-  /* slightly lighter dark */
-  --text: #f4f4f5;
-  /* off white */
-  --text-muted: #a1a1aa;
-  --border: #27272a;
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --color-accent: #dc2626;
+  --color-accent-hover: #b91c1c;
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
 }
 
-@theme inline {
-  --color-primary: var(--primary);
-  --color-primary-light: var(--primary-light);
-  --color-primary-dark: var(--primary-dark);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-surface: var(--surface);
-  --color-text: var(--text);
-  --color-text-muted: var(--text-muted);
-  --color-border: var(--border);
-  --font-sans: var(--font-inter);
-}
-
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--text);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-}
-
-/* Smooth transitions for interactive elements */
-a,
-button {
-  transition: all 0.2s ease-in-out;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--surface);
+  background: var(--color-surface);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-light);
-  border-radius: 4px;
+  background: var(--color-border);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
+  background: var(--color-text-muted);
 }
 
-/* Fade-in animation */
+/* Simple fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -80,34 +51,4 @@ button {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.animate-fade-in-up-delay-1 {
-  animation: fadeInUp 0.6s ease-out 0.1s forwards;
-  opacity: 0;
-}
-
-.animate-fade-in-up-delay-2 {
-  animation: fadeInUp 0.6s ease-out 0.2s forwards;
-  opacity: 0;
-}
-
-.animate-fade-in-up-delay-3 {
-  animation: fadeInUp 0.6s ease-out 0.3s forwards;
-  opacity: 0;
-}
-
-/* Button shine animation */
-@keyframes shine {
-  0% {
-    transform: translateX(-150%) skewX(-30deg);
-  }
-
-  100% {
-    transform: translateX(250%) skewX(-30deg);
-  }
-}
-
-.animate-shine {
-  animation: shine 2.5s infinite;
 }

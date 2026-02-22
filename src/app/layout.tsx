@@ -3,10 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SmoothScroll from "@/components/SmoothScroll";
-import ScrollProgress from "@/components/ScrollProgress";
 import BackToTop from "@/components/BackToTop";
-import CursorGlow from "@/components/CursorGlow";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,15 +37,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <SmoothScroll>
-          <ScrollProgress />
-          <CursorGlow />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <BackToTop />
-        </SmoothScroll>
+      <body className={`${inter.variable} font-sans antialiased bg-background text-text`}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <BackToTop />
       </body>
     </html>
   );
