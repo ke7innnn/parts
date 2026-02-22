@@ -1,12 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import ParallaxBackground from "@/components/ParallaxBackground";
 
 export default function Home() {
   return (
     <>
       {/* ========== HERO SECTION ========== */}
       <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-slate-50">
+        {/* Subtle, huge transparent 3D parallax car in background */}
+        <ParallaxBackground
+          src="/transparent-car.png"
+          alt="3D Car Abstract"
+          speed={0.15}
+          opacity={12}
+          className="scale-[2] origin-bottom-right translate-x-[20%] translate-y-[10%]"
+        />
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32 w-full pt-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
@@ -130,8 +140,17 @@ export default function Home() {
       </section>
 
       {/* ========== HOW IT WORKS SECTION ========== */}
-      <section className="py-20 sm:py-28 bg-surface border-t border-border">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-28 bg-surface border-t border-border relative overflow-hidden z-0">
+        {/* Another subtle parallax background, flipped horizontally for variation */}
+        <ParallaxBackground
+          src="/transparent-car.png"
+          alt="3D Car Abstract"
+          speed={0.2}
+          opacity={8}
+          className="scale-[1.8] origin-left -scale-x-100 -translate-x-[10%] opacity-20"
+        />
+
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-text tracking-tight">
               How It <span className="text-primary">Works</span>
