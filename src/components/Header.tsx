@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,6 +15,7 @@ const navLinks = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +28,8 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-          ? "bg-white/95 backdrop-blur-sm border-b border-border shadow-sm py-2"
-          : "bg-white py-3"
+        ? "bg-white/95 backdrop-blur-sm border-b border-border shadow-sm py-2"
+        : "bg-white py-3"
         }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -59,15 +61,21 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-3 py-2 text-sm font-medium text-text-muted hover:text-primary rounded-lg hover:bg-surface transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || (pathname?.startsWith(link.href) && link.href !== '/');
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${isActive
+                    ? "text-primary bg-surface font-semibold"
+                    : "text-text-muted hover:text-primary hover:bg-surface"
+                    }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Call Now Button + Mobile Toggle */}
@@ -106,16 +114,22 @@ export default function Header() {
           }`}
       >
         <div className="bg-white px-4 py-4 space-y-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block rounded-lg px-4 py-3 text-base font-medium text-text-muted hover:bg-surface hover:text-primary transition-all"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href || (pathname?.startsWith(link.href) && link.href !== '/');
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block rounded-lg px-4 py-3 text-base transition-all ${isActive
+                    ? "text-primary bg-primary/5 font-semibold"
+                    : "font-medium text-text-muted hover:bg-surface hover:text-primary"
+                  }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <a
             href="tel:+1234567890"
             className="mt-3 flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-bold text-white hover:bg-accent-hover transition-all"
