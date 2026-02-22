@@ -11,7 +11,7 @@ export default function AboutPage() {
             About <span className="text-primary">Us</span>
           </h1>
           <p className="mt-4 text-lg text-text-muted text-center max-w-2xl mx-auto">
-            We&apos;re on a mission to connect auto parts suppliers with high-intent buyers nationwide.
+            We&apos;re on a mission to provide the highest quality auto parts to drivers and mechanics nationwide.
           </p>
         </div>
       </section>
@@ -32,13 +32,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-text mb-4">Our Mission</h2>
               <p className="text-text-muted leading-relaxed mb-4">
-                At AutoParts Leads, we bridge the gap between auto parts suppliers and qualified buyers. Our platform uses advanced matching technology to ensure every lead you receive is from a genuine, ready-to-purchase customer.
+                At AutoParts Store, we bridge the gap between premium auto parts manufacturers and you. Our massive inventory ensures that you always get exactly the right part for your specific vehicle.
               </p>
               <p className="text-text-muted leading-relaxed mb-4">
-                Founded by automotive industry veterans, we understand the challenges suppliers face in finding reliable customers. That&apos;s why we&apos;ve built a system that delivers exclusive, verified leads directly to your inbox.
+                Founded by automotive industry veterans, we understand the challenges drivers face in finding reliable, affordable parts. That&apos;s why we&apos;ve built a supply chain that delivers verified, high-performance parts directly to your door.
               </p>
               <p className="text-text-muted leading-relaxed">
-                We&apos;re committed to transparency, quality, and delivering measurable results for every partner we work with.
+                We&apos;re committed to transparency, quality, and delivering measurable results for every customer we serve.
               </p>
             </div>
           </div>
@@ -50,8 +50,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
-              { stat: "10,000+", label: "Leads Delivered" },
-              { stat: "500+", label: "Active Partners" },
+              { stat: "10,000+", label: "Parts Delivered" },
+              { stat: "500+", label: "Happy Customers" },
               { stat: "98%", label: "Satisfaction Rate" },
               { stat: "24hrs", label: "Avg Delivery Time" },
             ].map((item) => (

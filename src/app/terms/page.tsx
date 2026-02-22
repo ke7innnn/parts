@@ -34,14 +34,14 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-bold text-text mb-3">1. Acceptance of Terms</h2>
               <p className="text-text-muted leading-relaxed">
-                By accessing or using the AutoParts Leads website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not access or use our services.
+                By accessing or using the AutoParts Store website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not access or use our services.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-text mb-3">2. Services</h2>
               <p className="text-text-muted leading-relaxed">
-                AutoParts Leads provides a lead generation platform that connects auto parts suppliers with potential buyers. We do not guarantee specific results or conversion rates. Lead quality may vary based on market conditions.
+                AutoParts Store provides an online platform for purchasing auto parts. Availability of specific parts may vary based on market conditions.
               </p>
             </div>
 
@@ -62,14 +62,14 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-bold text-text mb-3">5. Intellectual Property</h2>
               <p className="text-text-muted leading-relaxed">
-                All content, trademarks, and other intellectual property on this website are owned by AutoParts Leads. You may not reproduce, distribute, or create derivative works without our prior written permission.
+                All content, trademarks, and other intellectual property on this website are owned by AutoParts Store. You may not reproduce, distribute, or create derivative works without our prior written permission.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-text mb-3">6. Limitation of Liability</h2>
               <p className="text-text-muted leading-relaxed">
-                AutoParts Leads shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services. Our total liability shall not exceed the amount paid by you in the preceding 12 months.
+                AutoParts Store shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services. Our total liability shall not exceed the amount paid by you in the preceding 12 months.
               </p>
             </div>
 
@@ -84,7 +84,7 @@ export default function TermsPage() {
               <h2 className="text-xl font-bold text-text mb-3">8. Contact</h2>
               <p className="text-text-muted leading-relaxed">
                 For questions about these Terms, please contact us at{" "}
-                <a href="mailto:info@autopartsleads.com" className="text-primary hover:underline">info@autopartsleads.com</a> or call us at{" "}
+                <a href="mailto:info@autopartsstore.com" className="text-primary hover:underline">info@autopartsstore.com</a> or call us at{" "}
                 <a href="tel:+1234567890" className="text-primary hover:underline">+1 (234) 567-890</a>.
               </p>
             </div>

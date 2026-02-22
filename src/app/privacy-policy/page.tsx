@@ -34,14 +34,14 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-xl font-bold text-text mb-3">1. Information We Collect</h2>
               <p className="text-text-muted leading-relaxed">
-                We collect information you provide directly, including your name, email address, phone number, and business details when you submit a lead request or contact us. We also automatically collect certain information about your device and how you interact with our website.
+                We collect information you provide directly, including your name, email address, phone number, and vehicle details when you submit a part request or contact us. We also automatically collect certain information about your device and how you interact with our website.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-text mb-3">2. How We Use Your Information</h2>
               <p className="text-text-muted leading-relaxed">
-                We use the information we collect to process and deliver leads, communicate with you about our services, improve our platform, and comply with legal obligations. We may also use your information to send you marketing communications with your consent.
+                We use the information we collect to process and deliver orders, communicate with you about our products, improve our platform, and comply with legal obligations. We may also use your information to send you marketing communications with your consent.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-xl font-bold text-text mb-3">6. Your Rights</h2>
               <p className="text-text-muted leading-relaxed">
-                You have the right to access, correct, or delete your personal data. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at info@autopartsleads.com.
+                You have the right to access, correct, or delete your personal data. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at info@autopartsstore.com.
               </p>
             </div>
 
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-xl font-bold text-text mb-3">7. Contact Us</h2>
               <p className="text-text-muted leading-relaxed">
                 If you have any questions about this Privacy Policy, please contact us at{" "}
-                <a href="mailto:info@autopartsleads.com" className="text-primary hover:underline">info@autopartsleads.com</a> or call us at{" "}
+                <a href="mailto:info@autopartsstore.com" className="text-primary hover:underline">info@autopartsstore.com</a> or call us at{" "}
                 <a href="tel:+1234567890" className="text-primary hover:underline">+1 (234) 567-890</a>.
               </p>
             </div>

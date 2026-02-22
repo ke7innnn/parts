@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Terms & Conditions | AutoParts Leads",
+    title: "Terms & Conditions | AutoParts Store",
     description:
-        "Terms and conditions governing the use of AutoParts Leads services.",
+        "Terms and conditions governing the use of AutoParts Store services.",
 };
 
 export default function TermsLayout({

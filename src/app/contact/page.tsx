@@ -11,7 +11,7 @@ export default function ContactPage() {
             Contact <span className="text-primary">Us</span>
           </h1>
           <p className="mt-4 text-lg text-text-muted text-center max-w-2xl mx-auto">
-            Get in touch with our team. We&apos;re here to help you grow your auto parts business.
+            Get in touch with our team. We&apos;re here to help you find the exact auto parts you need.
           </p>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-text">Email</h3>
-                    <a href="mailto:info@autopartsleads.com" className="text-text-muted hover:text-primary transition-colors">info@autopartsleads.com</a>
+                    <a href="mailto:info@autopartsstore.com" className="text-text-muted hover:text-primary transition-colors">info@autopartsstore.com</a>
                   </div>
                 </div>
 

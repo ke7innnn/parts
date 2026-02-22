@@ -12,20 +12,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AutoParts Leads | High-Quality Auto Parts Leads Delivered Daily",
+  title: "AutoParts Store | High-Quality Auto Parts Delivered Daily",
   description:
-    "We connect auto parts suppliers with ready-to-buy customers across the country. Get verified, high-intent leads delivered to your inbox daily.",
+    "We provide drivers and mechanics with premium auto parts across the country. Get verified, high-quality car parts delivered to your door.",
   keywords: [
-    "auto parts leads",
+    "auto parts store",
     "car parts suppliers",
-    "automotive leads",
-    "auto parts buyers",
-    "lead generation",
+    "automotive parts",
+    "buy auto parts",
+    "car parts for sale",
   ],
   openGraph: {
-    title: "AutoParts Leads | High-Quality Auto Parts Leads Delivered Daily",
+    title: "AutoParts Store | High-Quality Auto Parts Delivered Daily",
     description:
-      "We connect auto parts suppliers with ready-to-buy customers across the country.",
+      "We provide drivers and mechanics with premium auto parts across the country.",
     type: "website",
   },
 };
