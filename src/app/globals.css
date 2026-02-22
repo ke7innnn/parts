@@ -54,18 +54,18 @@ html {
 }
 
 /* Floating 3D animation */
-@keyframes float {
+@keyframes float3d {
 
   0%,
   100% {
-    transform: translateY(0);
+    transform: perspective(1000px) translateY(0) rotateX(0deg) rotateY(0deg);
   }
 
   50% {
-    transform: translateY(-15px);
+    transform: perspective(1000px) translateY(-20px) rotateX(4deg) rotateY(-3deg) scale(1.02);
   }
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float3d 6s ease-in-out infinite;
 }
