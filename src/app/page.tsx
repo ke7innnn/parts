@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* ========== HERO SECTION ========== */}
-      <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-slate-50">
+      <section className="relative overflow-hidden min-h-screen flex items-center bg-white">
 
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32 w-full pt-28 relative z-10">
