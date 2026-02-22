@@ -50,14 +50,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right illustration */}
-            <div className="hidden lg:flex items-center justify-center animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <div className="relative w-[120%] lg:w-[130%] aspect-[4/3] max-w-[700px] lg:ml-4 animate-float" style={{ animationDelay: "0.5s" }}>
+            {/* Right illustration - now visible on mobile */}
+            <div className="flex items-center justify-center animate-fade-in-up mt-8 lg:mt-0" style={{ animationDelay: "0.2s" }}>
+              <div className="relative w-[140%] sm:w-[110%] lg:w-[130%] aspect-[4/3] max-w-[700px] lg:ml-4 animate-float" style={{ animationDelay: "0.5s" }}>
                 <Image
                   src="/bluecar.png"
                   alt="Premium Blue Car"
                   fill
-                  className="object-contain mix-blend-multiply scale-110"
+                  className="object-contain mix-blend-multiply scale-110 sm:scale-100 lg:scale-110"
                   priority
                 />
               </div>
