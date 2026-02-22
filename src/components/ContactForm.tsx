@@ -110,7 +110,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="fullName" className="block text-sm font-medium text-text mb-1.5">
-          Full Name <span className="text-accent">*</span>
+          Full Name <span className="text-red-500">*</span>
         </label>
         <input type="text" id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} className={inputClass(!!errors.fullName)} placeholder="John Doe" />
         {errors.fullName && <p className="mt-1 text-xs text-red-500">{errors.fullName}</p>}
@@ -118,7 +118,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-text mb-1.5">
-          Email <span className="text-accent">*</span>
+          Email <span className="text-red-500">*</span>
         </label>
         <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className={inputClass(!!errors.email)} placeholder="john@example.com" />
         {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email}</p>}
@@ -126,7 +126,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="phone" className="block text-sm font-medium text-text mb-1.5">
-          Phone Number <span className="text-accent">*</span>
+          Phone Number <span className="text-red-500">*</span>
         </label>
         <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className={inputClass(!!errors.phone)} placeholder="+1 (234) 567-890" />
         {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
@@ -134,7 +134,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="partsRequired" className="block text-sm font-medium text-text mb-1.5">
-          Parts Required <span className="text-accent">*</span>
+          Parts Required <span className="text-red-500">*</span>
         </label>
         <textarea id="partsRequired" name="partsRequired" value={formData.partsRequired} onChange={handleChange} rows={4} className={`${inputClass(!!errors.partsRequired)} resize-none`} placeholder="Describe the auto parts you need..." />
         {errors.partsRequired && <p className="mt-1 text-xs text-red-500">{errors.partsRequired}</p>}
