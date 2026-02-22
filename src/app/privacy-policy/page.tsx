@@ -1,9 +1,23 @@
+import Image from "next/image";
+import ParallaxBackground from "@/components/ParallaxBackground";
+
 export default function PrivacyPolicyPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-gradient-to-b from-blue-50 to-white border-b border-border">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 overflow-hidden border-b border-border">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/about-bg-light.png"
+            alt="Warehouse Background"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-50/90 to-white/95"></div>
+        </div>
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl sm:text-5xl font-bold text-text tracking-tight">
             Privacy <span className="text-primary">Policy</span>
           </h1>
@@ -12,8 +26,15 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* Content */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-20 bg-white relative overflow-hidden z-0">
+        <ParallaxBackground
+          src="/parallax-car-light.png"
+          alt="Clean Car Background"
+          speed={0.15}
+          opacity={50}
+        />
+
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-border shadow-sm">
           <div className="prose prose-slate max-w-none space-y-8">
             <div>
               <h2 className="text-xl font-bold text-text mb-3">1. Information We Collect</h2>

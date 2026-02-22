@@ -10,14 +10,13 @@ export default function Home() {
       <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-slate-50">
         {/* Subtle, huge transparent 3D parallax car in background */}
         <ParallaxBackground
-          src="/transparent-car.png"
-          alt="3D Car Abstract"
-          speed={0.15}
-          opacity={12}
-          className="scale-[2] origin-bottom-right translate-x-[20%] translate-y-[10%]"
+          src="/parallax-car-light.png"
+          alt="Clean Car Background"
+          speed={0.12}
+          opacity={50}
         />
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32 w-full pt-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32 w-full pt-28 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
             <div className="animate-fade-in-up">
@@ -61,10 +60,10 @@ export default function Home() {
             <div className="hidden lg:flex items-center justify-center animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <div className="relative w-full aspect-square max-w-[500px]">
                 <Image
-                  src="/hero-car.png"
-                  alt="Premium Auto Parts"
+                  src="/hero-light-boxed.png"
+                  alt="Premium Boxed Engine"
                   fill
-                  className="object-contain"
+                  className="object-contain drop-shadow-2xl mix-blend-multiply"
                   priority
                 />
               </div>
@@ -143,11 +142,10 @@ export default function Home() {
       <section className="py-20 sm:py-28 bg-surface border-t border-border relative overflow-hidden z-0">
         {/* Another subtle parallax background, flipped horizontally for variation */}
         <ParallaxBackground
-          src="/transparent-car.png"
-          alt="3D Car Abstract"
-          speed={0.2}
-          opacity={8}
-          className="scale-[1.8] origin-left -scale-x-100 -translate-x-[10%] opacity-20"
+          src="/parallax-parts-light.png"
+          alt="Clean Auto Parts Background"
+          speed={0.18}
+          opacity={50}
         />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">

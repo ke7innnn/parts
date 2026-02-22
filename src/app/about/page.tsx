@@ -17,12 +17,18 @@ export default function AboutPage() {
       </section>
 
       {/* Mission + Image */}
-      <section className="py-16 sm:py-24 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-24 bg-white relative overflow-hidden z-0">
+        <ParallaxBackground
+          src="/parallax-parts-light.png"
+          alt="Abstract Automotive Parts"
+          speed={0.12}
+          opacity={50}
+        />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/about-bg.png"
+                src="/about-bg-light.png"
                 alt="Our Warehouse"
                 fill
                 className="object-cover"
@@ -45,15 +51,8 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 sm:py-20 bg-surface border-t border-border relative overflow-hidden z-0">
-        <ParallaxBackground
-          src="/transparent-car.png"
-          alt="Abstract 3D Car"
-          speed={0.12}
-          opacity={6}
-          className="scale-[2.5] origin-top-left -translate-y-1/2 opacity-30 blur-sm"
-        />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-16 sm:py-20 bg-surface border-t border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
               { stat: "10,000+", label: "Leads Delivered" },
