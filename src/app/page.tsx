@@ -54,10 +54,10 @@ export default function Home() {
             <div className="hidden lg:flex items-center justify-center animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <div className="relative w-full aspect-square max-w-[500px]">
                 <Image
-                  src="/hero-light-boxed.png"
-                  alt="Premium Boxed Engine"
+                  src="/bluecar.png"
+                  alt="Premium Blue Car"
                   fill
-                  className="object-contain drop-shadow-2xl mix-blend-multiply"
+                  className="object-contain drop-shadow-2xl"
                   priority
                 />
               </div>
