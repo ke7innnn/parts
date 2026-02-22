@@ -52,12 +52,12 @@ export default function Home() {
 
             {/* Right illustration */}
             <div className="hidden lg:flex items-center justify-center animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <div className="relative w-full aspect-square max-w-[500px]">
+              <div className="relative w-[120%] lg:w-[130%] aspect-[4/3] max-w-[700px] lg:-mr-20 animate-float" style={{ animationDelay: "0.5s" }}>
                 <Image
                   src="/bluecar.png"
                   alt="Premium Blue Car"
                   fill
-                  className="object-contain mix-blend-multiply"
+                  className="object-contain mix-blend-multiply scale-110"
                   priority
                 />
               </div>
