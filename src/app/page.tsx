@@ -57,7 +57,7 @@ export default function Home() {
                   src="/bluecar.png"
                   alt="Premium Blue Car"
                   fill
-                  className="object-contain drop-shadow-2xl"
+                  className="object-contain mix-blend-multiply"
                   priority
                 />
               </div>
