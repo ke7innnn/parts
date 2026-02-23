@@ -57,7 +57,7 @@ export default function Home() {
             <div className="flex items-center justify-center animate-fade-in-up mt-8 lg:mt-0" style={{ animationDelay: "0.2s" }}>
               <div className="relative w-[140%] sm:w-[110%] lg:w-[130%] aspect-[4/3] max-w-[700px] lg:ml-4 animate-float" style={{ animationDelay: "0.5s" }}>
                 <Image
-                  src="/bluecar.png"
+                  src="/car-2.png"
                   alt="Premium Blue Car"
                   fill
                   className="object-contain mix-blend-multiply scale-110 sm:scale-100 lg:scale-110"
@@ -304,7 +304,7 @@ export default function Home() {
                 Tell us what you need and our team will get you the exact high-quality auto parts required for your vehicle.
               </p>
 
-              <div className="mt-8 space-y-4">
+              {/* <div className="mt-8 space-y-4">
                 {[
                   "100% Fitment Guarantee",
                   "Premium parts shipped within 24 hours",
@@ -320,20 +320,68 @@ export default function Home() {
                     <span className="text-base text-text-muted">{item}</span>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
-              <div className="mt-10 p-6 rounded-xl bg-surface border border-border">
-                <p className="text-text-muted">
-                  <span className="font-bold text-text block mb-1">Need immediate assistance?</span>
-                  Call us directly at{" "}
-                  <a href="tel:+1234567890" className="text-primary font-bold hover:underline">
-                    +1 (234) 567-890
-                  </a>
-                  <span className="block mt-2">or email us at</span>
-                  <a href="mailto:info@autopartsstore.com" className="text-primary font-bold hover:underline">
-                    info@autopartsstore.com
-                  </a>
-                </p>
+              <div className="mt-10 space-y-6">
+                <div className="p-6 rounded-xl bg-surface border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0 h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-text mb-1">Our Location</h4>
+                      <p className="text-text-muted text-sm leading-relaxed">
+                        96-10 57th Avenue, <br />
+                        Corona, NY 11368
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 rounded-xl bg-surface border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0 h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="w-full">
+                      <h4 className="font-bold text-text mb-2">Working Hours</h4>
+                      <div className="space-y-1.5 text-sm">
+                        <div className="flex justify-between items-center py-1 border-b border-border/50">
+                          <span className="text-text-muted">Week Days:</span>
+                          <span className="font-semibold text-text">08:00 – 20:00</span>
+                        </div>
+                        <div className="flex justify-between items-center py-1 border-b border-border/50">
+                          <span className="text-text-muted">Saturday:</span>
+                          <span className="font-semibold text-text">08:00 – 16:00</span>
+                        </div>
+                        <div className="flex justify-between items-center py-1">
+                          <span className="text-text-muted">Sunday:</span>
+                          <span className="font-semibold text-text">08:00 – 14:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
+                  <p className="text-text-muted text-sm leading-relaxed">
+                    <span className="font-bold text-text block mb-1 underline decoration-primary/30 underline-offset-4">Need immediate assistance?</span>
+                    Call us directly at{" "}
+                    <a href="tel:+1234567890" className="text-primary font-bold hover:underline">
+                      +1 (234) 567-890
+                    </a>
+                    <span className="block mt-1">or email us at{" "}
+                    <a href="mailto:info@autopartsstore.com" className="text-primary font-bold hover:underline">
+                      info@autopartsstore.com
+                    </a>
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
 

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -35,27 +36,19 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <svg
-              className="h-9 w-9 text-primary transition-transform group-hover:scale-105"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="40" height="40" rx="8" fill="currentColor" />
-              <path
-                d="M8 24C8 24 11 16 14 14C17 12 23 12 26 14C29 16 32 24 32 24"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
+          <Link href="/" className="flex items-center gap-1 group">
+            <div className="relative h-14 w-14 flex-shrink-0 transition-transform group-hover:scale-105">
+              <Image
+                src="/logo-cropped.png"
+                alt="Optimus Auto Parts Logo"
+                width={88}
+                height={88}
+                className="object-contain w-full h-full"
               />
-              <circle cx="14" cy="26" r="3" fill="white" />
-              <circle cx="26" cy="26" r="3" fill="white" />
-              <path d="M14 20H26" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-              <path d="M12 22H28" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-            <span className="text-xl font-bold text-primary">
-              Auto<span className="text-accent">Parts</span>
+            </div>
+            <span className="text-xl font-black tracking-tighter uppercase flex flex-wrap sm:flex-nowrap gap-x-1.5 leading-none">
+              <span className="text-[#243040]">Optimus</span>
+              <span className="text-[#FF8A1F]">Auto Parts</span>
             </span>
           </Link>
 
@@ -81,7 +74,7 @@ export default function Header() {
           {/* Call Now Button + Mobile Toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+1234567890"
+              href="tel:18885668927"
               className="hidden sm:inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover active:scale-95 transition-all"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
@@ -131,7 +124,7 @@ export default function Header() {
             );
           })}
           <a
-            href="tel:+1234567890"
+            href="tel:18885668927"
             className="mt-3 flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-bold text-white hover:bg-accent-hover transition-all"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">

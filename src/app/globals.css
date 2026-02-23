@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2563eb;
-  --color-primary-light: #3b82f6;
+  --color-primary: #FF8A1F;
+  --color-primary-light: #FF8A1F;
   --color-primary-dark: #1d4ed8;
   --color-accent: #22c55e;
   --color-accent-hover: #16a34a;
@@ -54,7 +54,7 @@ html {
 }
 
 /* Floating 3D animation */
-@keyframes float3d {
+/* @keyframes float3d {
   0% {
     transform: perspective(1000px) translateY(0) rotateX(0deg) rotateY(0deg) scale(1);
   }
@@ -74,7 +74,7 @@ html {
   100% {
     transform: perspective(1000px) translateY(0) rotateX(0deg) rotateY(0deg) scale(1);
   }
-}
+} */
 
 .animate-float {
   animation: float3d 6s ease-in-out infinite;
