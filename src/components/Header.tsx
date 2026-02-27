@@ -74,7 +74,7 @@ export default function Header() {
           {/* Call Now Button + Mobile Toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:18885668927"
+              href="tel:+18553784258"
               className="hidden sm:inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover active:scale-95 transition-all"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
@@ -124,7 +124,7 @@ export default function Header() {
             );
           })}
           <a
-            href="tel:18885668927"
+            href="tel:+18553784258"
             className="mt-3 flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-bold text-white hover:bg-accent-hover transition-all"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">

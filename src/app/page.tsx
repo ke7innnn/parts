@@ -42,7 +42,7 @@ export default function Home() {
                   </svg>
                 </Link>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+18553784258"
                   className="inline-flex items-center justify-center rounded-lg border border-accent bg-white px-8 py-4 text-base font-bold text-accent hover:bg-accent hover:text-white transition-all"
                 >
                   <svg className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
@@ -372,12 +372,12 @@ export default function Home() {
                   <p className="text-text-muted text-sm leading-relaxed">
                     <span className="font-bold text-text block mb-1 underline decoration-primary/30 underline-offset-4">Need immediate assistance?</span>
                     Call us directly at{" "}
-                    <a href="tel:+1234567890" className="text-primary font-bold hover:underline">
-                      +1 (234) 567-890
+                    <a href="tel:+18553784258" className="text-primary font-bold hover:underline">
+                      +1 855 378 4258
                     </a>
                     <span className="block mt-1">or email us at{" "}
-                    <a href="mailto:info@autopartsstore.com" className="text-primary font-bold hover:underline">
-                      info@autopartsstore.com
+                    <a href="mailto:contact@optimusparts.com" className="text-primary font-bold hover:underline">
+                      contact@optimusparts.com
                     </a>
                     </span>
                   </p>

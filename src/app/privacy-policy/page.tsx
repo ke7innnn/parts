@@ -14,10 +14,10 @@ export default function PrivacyPolicyPage() {
 
             <div className="bg-surface border border-border p-8 rounded-2xl mb-12">
               <p className="text-text leading-relaxed mb-4">
-                Welcome to <strong>Optimus Consulting US DBA Optimus Auto Parts</strong> (“we,” “our,” or “us”). This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website, use our services, or interact with our business. By accessing our website or using our services, you agree to the terms described in this policy.
+                Welcome to <strong>Optimus Auto Parts</strong> (“we,” “our,” or “us”). This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website, use our services, or interact with our business. By accessing our website or using our services, you agree to the terms described in this policy.
               </p>
               <p className="text-text leading-relaxed">
-                All references to <strong>Optimus Auto Parts</strong> refer to <strong>Optimus Consulting US DBA Optimus Auto Parts</strong>, a legally registered business entity. This name may be used interchangeably across our website and communications for branding and operational purposes.
+                All references to <strong>Optimus Auto Parts</strong>, a legally registered business entity. This name may be used interchangeably across our website and communications for branding and operational purposes.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="text-2xl font-bold text-text mb-4 border-b border-border pb-2">How We Use Information</h2>
                 <p className="mb-4">
-                  <strong>Optimus Consulting US DBA Optimus Auto Parts</strong> recognizes the importance of protecting your privacy and securing your data. We use your information only as necessary to operate our business and deliver quality products and services, including informing you about offerings and opportunities. Enrollment in and use of <strong>Optimus Auto Parts</strong> products and services is entirely voluntary, and you may opt out at any time.
+                  <strong>Optimus Auto Parts</strong> recognizes the importance of protecting your privacy and securing your data. We use your information only as necessary to operate our business and deliver quality products and services, including informing you about offerings and opportunities. Enrollment in and use of <strong>Optimus Auto Parts</strong> products and services is entirely voluntary, and you may opt out at any time.
                 </p>
                 <p>
                   If you have questions or concerns about this policy, please contact us at <a href="mailto:support@optimusautoparts.com" className="text-primary hover:underline font-semibold">support@optimusautoparts.com</a>.
@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
 
                 <h3 className="text-xl font-bold text-text mb-3">Consent and Opt-Out</h3>
                 <p className="mb-4">
-                  By providing your phone number, you consent to receive recurring SMS messages from <strong>Optimus Auto Parts</strong>. You may opt out at any time by replying <strong>STOP</strong> to any message or contacting us at <a href="mailto:support@optimusautoparts.com" className="text-primary hover:underline font-semibold">support@optimusautoparts.com</a> or <a href="tel:18885668927" className="text-primary hover:underline font-semibold">(888) 566-8927</a>.
+                  By providing your phone number, you consent to receive recurring SMS messages from <strong>Optimus Auto Parts</strong>. You may opt out at any time by replying <strong>STOP</strong> to any message or contacting us at <a href="mailto:contact@optimusautoparts.com" className="text-primary hover:underline font-semibold">contact@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a>.
                 </p>
               </section>
 
@@ -170,14 +170,11 @@ export default function PrivacyPolicyPage() {
                   <div className="space-y-4 text-sm">
                     <div>
                       <h4 className="font-bold text-text mb-1 uppercase tracking-wider text-[10px]">Email Support</h4>
-                      <div className="space-y-1">
-                        <a href="mailto:info@optimusautoparts.com" className="block text-primary hover:underline">info@optimusautoparts.com</a>
-                        <a href="mailto:support@optimusautoparts.com" className="block text-primary hover:underline">support@optimusautoparts.com</a>
-                      </div>
+                        <a href="mailto:support@optimusautoparts.com" className="block text-primary font-semibold hover:underline">contact@optimusautoparts.com</a>
                     </div>
                     <div>
                       <h4 className="font-bold text-text mb-1 uppercase tracking-wider text-[10px]">Phone</h4>
-                      <a href="tel:18885668927" className="text-primary hover:underline font-semibold">(888) 566-8927</a>
+                      <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a>
                     </div>
                   </div>
                 </div>
