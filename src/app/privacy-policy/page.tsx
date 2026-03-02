@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
                   <strong>Optimus Auto Parts</strong> recognizes the importance of protecting your privacy and securing your data. We use your information only as necessary to operate our business and deliver quality products and services, including informing you about offerings and opportunities. Enrollment in and use of <strong>Optimus Auto Parts</strong> products and services is entirely voluntary, and you may opt out at any time.
                 </p>
                 <p>
-                  If you have questions or concerns about this policy, please contact us at <a href="mailto:support@optimusautoparts.com" className="text-primary hover:underline font-semibold">support@optimusautoparts.com</a>.
+                  If you have questions or concerns about this policy, please contact us at <a href="mailto:info@optimusautoparts.com" className="text-primary hover:underline font-semibold">info@optimusautoparts.com</a>.
                 </p>
               </section>
 
@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
 
                 <h3 className="text-xl font-bold text-text mb-3">Consent and Opt-Out</h3>
                 <p className="mb-4">
-                  By providing your phone number, you consent to receive recurring SMS messages from <strong>Optimus Auto Parts</strong>. You may opt out at any time by replying <strong>STOP</strong> to any message or contacting us at <a href="mailto:contact@optimusautoparts.com" className="text-primary hover:underline font-semibold">contact@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a>.
+                  By providing your phone number, you consent to receive recurring SMS messages from <strong>Optimus Auto Parts</strong>. You may opt out at any time by replying <strong>STOP</strong> to any message or contacting us at <a href="mailto:info@optimusautoparts.com" className="text-primary hover:underline font-semibold">info@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a>.
                 </p>
               </section>
 
@@ -170,7 +170,7 @@ export default function PrivacyPolicyPage() {
                   <div className="space-y-4 text-sm">
                     <div>
                       <h4 className="font-bold text-text mb-1 uppercase tracking-wider text-[10px]">Email Support</h4>
-                        <a href="mailto:support@optimusautoparts.com" className="block text-primary font-semibold hover:underline">contact@optimusautoparts.com</a>
+                        <a href="mailto:info@optimusautoparts.com" className="block text-primary font-semibold hover:underline">info@optimusautoparts.com</a>
                     </div>
                     <div>
                       <h4 className="font-bold text-text mb-1 uppercase tracking-wider text-[10px]">Phone</h4>

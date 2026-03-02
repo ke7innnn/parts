@@ -34,7 +34,7 @@ export default function TermsPage() {
 
                 <h3 className="text-xl font-bold text-text mb-3">Consent to Receive SMS Messages</h3>
                 <p className="mb-4">
-                  By providing your phone number, you consent to receive recurring SMS messages from <strong>Optimus Consulting US DBA Optimus Auto Parts</strong> for the purposes listed above. You may withdraw your consent at any time by replying <strong>STOP</strong> to any message or by contacting us at <a href="mailto:support@optimusautoparts.com" className="text-primary hover:underline font-semibold">support@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a>.
+                  By providing your phone number, you consent to receive recurring SMS messages from <strong>Optimus Consulting US DBA Optimus Auto Parts</strong> for the purposes listed above. You may withdraw your consent at any time by replying <strong>STOP</strong> to any message or by contacting us at <a href="mailto:info@optimusautoparts.com" className="text-primary hover:underline font-semibold">info@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a>.
                 </p>
 
                 <h3 className="text-xl font-bold text-text mb-3">Data Sharing</h3>
@@ -46,7 +46,7 @@ export default function TermsPage() {
                 <p className="mb-4">You may opt out of SMS messages at any time by:</p>
                 <ul className="list-disc pl-5 space-y-2 mb-4">
                   <li>Replying <strong>STOP</strong> to any SMS message</li>
-                  <li>Contacting us at <a href="mailto:support@optimusautoparts.com" className="text-primary hover:underline font-semibold">support@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a></li>
+                  <li>Contacting us at <a href="mailto:info@optimusautoparts.com" className="text-primary hover:underline font-semibold">info@optimusautoparts.com</a> or <a href="tel:+18553784258" className="text-primary hover:underline font-semibold">+1 855 378 4258</a></li>
                 </ul>
                 <p>After opting out of SMS messages, you may still receive emails or other communications unless you opt out of those separately.</p>
               </section>
@@ -125,7 +125,7 @@ export default function TermsPage() {
                   <div className="mt-6 space-y-4">
                     <div className="flex items-center gap-3">
                       <span className="text-xl">📧</span>
-                      <a href="mailto:support@optimusautoparts.com" className="text-primary font-bold hover:underline">support@optimusautoparts.com</a>
+                      <a href="mailto:info@optimusautoparts.com" className="text-primary font-bold hover:underline">info@optimusautoparts.com</a>
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-xl">📞</span>

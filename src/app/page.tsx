@@ -51,6 +51,9 @@ export default function Home() {
                   Call Now
                 </a>
               </div>
+              <p className="mt-8 text-sm sm:text-base text-text-muted max-w-xl leading-relaxed">
+                Consult with our experienced automotive experts to ensure you purchase the exact, most accurate, and most reliable parts for your vehicle. Our team is dedicated to helping you find the right fit the first time, saving you time, money, and hassle. Whether you're replacing a worn component or upgrading for better performance, we provide professional guidance and trusted solutions so you can buy with complete confidence.
+              </p>
             </div>
 
             {/* Right illustration - now visible on mobile */}
@@ -225,7 +228,7 @@ export default function Home() {
       </section>
 
       {/* ========== TESTIMONIALS SECTION ========== */}
-      <section className="py-20 sm:py-28 bg-white overflow-hidden">
+      {/* <section className="py-20 sm:py-28 bg-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -290,7 +293,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ========== CONTACT FORM SECTION ========== */}
       <section id="contact-form" className="py-20 sm:py-28 bg-white border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -303,24 +306,6 @@ export default function Home() {
               <p className="mt-4 text-text-muted text-lg leading-relaxed">
                 Tell us what you need and our team will get you the exact high-quality auto parts required for your vehicle.
               </p>
-
-              {/* <div className="mt-8 space-y-4">
-                {[
-                  "100% Fitment Guarantee",
-                  "Premium parts shipped within 24 hours",
-                  "OEM and high-quality aftermarket options",
-                  "Expert customer support",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="flex-shrink-0 h-7 w-7 rounded-full bg-green-100 flex items-center justify-center">
-                      <svg className="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                    </div>
-                    <span className="text-base text-text-muted">{item}</span>
-                  </div>
-                ))}
-              </div> */}
 
               <div className="mt-10 space-y-6">
                 <div className="p-6 rounded-xl bg-surface border border-border">
@@ -376,8 +361,8 @@ export default function Home() {
                       +1 855 378 4258
                     </a>
                     <span className="block mt-1">or email us at{" "}
-                    <a href="mailto:contact@optimusparts.com" className="text-primary font-bold hover:underline">
-                      contact@optimusparts.com
+                    <a href="mailto:support@optimusautoparts.com" className="text-primary font-bold hover:underline">
+                      support@optimusautoparts.com
                     </a>
                     </span>
                   </p>

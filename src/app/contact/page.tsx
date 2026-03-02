@@ -48,8 +48,8 @@ export default function ContactPage() {
     </div>
     <div className="min-w-0">
       <h3 className="font-semibold text-text">Email</h3>
-      <a href="mailto:contact@optimusautoparts.com" className="text-sm text-primary font-bold hover:underline break-words">
-        contact@optimusautoparts.com
+      <a href="mailto:support@optimusautoparts.com" className="text-sm text-primary font-bold hover:underline break-words">
+        support@optimusautoparts.com
       </a>
     </div>
   </div>

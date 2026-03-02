@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import Link from "next/link";
 
 interface FormData {
   fullName: string;
   email: string;
   phone: string;
   partsRequired: string;
+  smsConsent: boolean;
 }
 
 interface FormErrors {
@@ -14,6 +16,7 @@ interface FormErrors {
   email?: string;
   phone?: string;
   partsRequired?: string;
+  smsConsent?: string;
 }
 
 export default function ContactForm() {
@@ -22,6 +25,7 @@ export default function ContactForm() {
     email: "",
     phone: "",
     partsRequired: "",
+    smsConsent: false,
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -40,6 +44,7 @@ export default function ContactForm() {
       newErrors.phone = "Please enter a valid phone number";
     }
     if (!formData.partsRequired.trim()) newErrors.partsRequired = "Please describe the parts you need";
+    if (!formData.smsConsent) newErrors.smsConsent = "You must agree to receive SMS messages to proceed";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -59,7 +64,7 @@ export default function ContactForm() {
       );
       if (response.ok) {
         setStatus("success");
-        setFormData({ fullName: "", email: "", phone: "", partsRequired: "" });
+        setFormData({ fullName: "", email: "", phone: "", partsRequired: "", smsConsent: false });
       } else {
         setStatus("error");
       }
@@ -69,7 +74,10 @@ export default function ContactForm() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+    const target = e.target as HTMLInputElement;
+    const name = target.name;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
@@ -138,6 +146,28 @@ export default function ContactForm() {
         </label>
         <textarea id="partsRequired" name="partsRequired" value={formData.partsRequired} onChange={handleChange} rows={4} className={`${inputClass(!!errors.partsRequired)} resize-none`} placeholder="Describe the auto parts you need..." />
         {errors.partsRequired && <p className="mt-1 text-xs text-red-500">{errors.partsRequired}</p>}
+      </div>
+
+      <div className="flex items-start gap-3 mt-4">
+        <div className="flex h-5 items-center mt-0.5">
+          <input
+            id="smsConsent"
+            name="smsConsent"
+            type="checkbox"
+            checked={formData.smsConsent}
+            onChange={handleChange}
+            className="h-4 w-4 rounded border-border text-primary focus:ring-primary/30"
+          />
+        </div>
+        <div className="text-xs leading-5 text-text-muted">
+          <label htmlFor="smsConsent" className="font-medium text-text">
+            SMS Consent <span className="text-red-500">*</span>
+          </label>
+          <p className="mt-1">
+            By checking this box, you agree to receive SMS messages from Insight Consulting US related to delivery notifications. You may reply STOP to opt-out at any time. Reply HELP to (855) 378-4258 for assistance. Messages and data rates may apply. Message frequency will vary. Learn more on our <Link href="/privacy-policy" className="text-primary hover:underline font-medium">privacy policy page</Link> and <Link href="/terms" className="text-primary hover:underline font-medium">Term &amp; Conditions</Link>.
+          </p>
+          {errors.smsConsent && <p className="mt-1 text-xs text-red-500 font-medium">{errors.smsConsent}</p>}
+        </div>
       </div>
 
       <button
